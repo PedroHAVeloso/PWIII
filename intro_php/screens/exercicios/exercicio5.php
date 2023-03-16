@@ -7,7 +7,7 @@
   require_once("$pastaPadrao/PWIII/intro_php/shared/head/head.php");
   require_once("$pastaPadrao/PWIII/intro_php/shared/constants/titles.php");
   
-  echo "<title>$titleEx4</title>";
+  echo "<title>$titleEx5</title>";
   echo "<link rel='stylesheet' href=''>";
 ?>
 <!-- /HEAD -->
@@ -17,7 +17,7 @@
   <header>
     <h3>
       <?php
-      echo $titleEx4;
+      echo $titleEx5;
       ?>
     </h3>
   </header>
@@ -25,19 +25,18 @@
   <main>
     <div class="resultado">
       <?php
-        $intLimite = 400;
-        $booPrimo = true;
-        for($iPrimos = 1; $iPrimos <= $intLimite; $iPrimos++){
-          for($iVerificar = 2; $iVerificar < $iPrimos; $iVerificar++){
-            if($iPrimos % $iVerificar == 0){
-              $booPrimo = false;
+        $intLimite = 10000;
+        $intSoma = 0;
+        for($iPerfeitos = 1; $iPerfeitos < $intLimite; $iPerfeitos++){
+          for($iVerificar = 1; $iVerificar < $iPerfeitos; $iVerificar++){
+            if($iPerfeitos % $iVerificar == 0){
+              $intSoma += $iVerificar;
             }
+          } 
+          if($intSoma == $iPerfeitos){
+            echo "$intSoma <br />";
           }
-          if($booPrimo == true):
-            echo "$iPrimos <br />";
-          else: 
-            $booPrimo = true;
-          endif;
+          $intSoma = 0;
         }
       ?>
     </div>

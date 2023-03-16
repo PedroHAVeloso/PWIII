@@ -16,8 +16,11 @@
   <main>
     <h3>Lista de exercícios em php:</h3>
     <?php
+    // Retorna um Array com os itens contidos na pasta
     $diretorioExercicios = scandir("$pastaPadrao/PWIII/intro_php/screens/exercicios/");
+    // Conta a quantidade de itens no Array (menos dois pois os primeiros itens são "." e "..")
     $qtdExercicios = (count($diretorioExercicios)) - 2;
+    // Monta as tags <a> na quantidade de itens dentro do Array/Pasta
     for ($iExercicios = 1; $iExercicios <= $qtdExercicios; $iExercicios++) {
       echo "<a href='exercicios/exercicio${iExercicios}.php'>Exercício $iExercicios</a>";
       echo "<hr />";
@@ -25,4 +28,5 @@
     ?>
   </main>
 </body>
+
 </html>
