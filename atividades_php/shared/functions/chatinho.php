@@ -20,9 +20,10 @@ if (isset($_POST['btnAcao'])) {
   if (
     $intAnoFin < $intAnoIni || $intDiaFin < 1 || $intDiaFin > 31 ||
     $intDiaIni < 1 || $intDiaIni > 31 || $intMesFin < 1 || $intMesFin >
-    12 || $intMesIni < 1 || $intMesIni > 12
+    12 || $intMesIni < 1 || $intMesIni > 12 || $intAnoFin > 2049 || $intAnoIni < 1950
   ) {
-    echo "O ano final deve ser maior ou igual ao ano inicial! Além disso informe meses e datas corretas.";
+    echo "O ano final deve ser maior ou igual ao ano inicial! Além disso informe meses e datas corretas. <br />";
+    echo "E por algum motivo do destino, os anos devem estar entre 1950 à 2049.";
   }
   //
   //
