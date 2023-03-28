@@ -45,7 +45,10 @@
     '
     <main>
 
-      <h2>Qual método você deseja usar para o exercício (o jeito que programei, o resultado é o mesmo em ambos)?</h2>
+      <h2>Qual método você deseja usar para o exercício?</h2>
+      <p>Não tinha lido o enunciado completo e fiz primeiro usando funções, sem sofrimento.</p>
+      <p>Fui ler tudo e vi que o professor queria na marra, aí aí, tá ai.</p>
+      
       <form action="" method="GET">
         <input type="submit" name="strEscolha" value="Método fáciozinho">
         <input type="submit" name="strEscolha" value="Método chatinho">
@@ -123,8 +126,7 @@
       echo '
       <main>
 
-        <h3>O cálculo nesse modo é feito de maneira aproximada, não atingindo o resultado exato.</h3>
-        <h3>Considera meses de 30 dias exatos e anos de 365 dias exatos.</h3>
+        <h3>Erro não resolvido: o usuária ainda pode informar meses, de exemplo, fevereiro com 31 dias etc. <br /> Não corrigi isso totalmente.</h3>
 
         <form action="" method="POST">
           <label for="inpInicial">Informe uma data inicial:</label> <br />
@@ -146,7 +148,7 @@
           <p>
       ';
 
-      require_once("$pastaPadrao/PWIII/atividades_php/shared/ex3chatinho.php");
+      require_once("$pastaPadrao/PWIII/atividades_php/shared/functions/chatinho.php");
 
       // Fim do HTML
       echo '
