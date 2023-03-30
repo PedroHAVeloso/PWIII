@@ -47,7 +47,7 @@
 
       <h2>Qual método você deseja usar para o exercício?</h2>
       <p>Não tinha lido o enunciado completo e fiz primeiro usando funções, sem sofrimento.</p>
-      <p>Fui ler tudo e vi que o professor queria na marra, aí aí, tá ai.</p>
+      <p>Fui ler tudo e vi que o professor queria na marra, tá ai.</p>
       
       <form action="" method="GET">
         <input type="submit" name="strEscolha" value="Método fáciozinho">
@@ -91,9 +91,13 @@
         $dateInicial = new DateTime($_POST['inpInicial']);
         $dateFinal = new DateTime($_POST['inpFinal']);
 
+        // Cria as variáveis de limite de tempo
+        $dataLimiteMenor = new DateTime('1950-01-01');
+        $dataLimiteMaior = new DateTime('2049-12-31');
+
         // Se a data final for igual ou menor que a inicial, informa que não pode ser assim
-        if ($dateFinal <= $dateInicial) {
-          echo "As datas devem ser diferentes! Além disso, a data final deve ser maior que a inicial.";
+        if ($dateFinal <= $dateInicial || $dateInicial < $dataLimiteMenor || $dateFinal > $dataLimiteMaior) {
+          echo "As datas devem ser diferentes! Além disso, a data final deve ser maior que a inicial e as datas devem estar entre 1950 e 2049.";
         } else {
           // Verifica o intervalo de tempo entre as duas datas
           $dateDiferenca = $dateInicial->diff($dateFinal);

@@ -32,10 +32,10 @@ if (isset($_POST['btnAcao'])) {
     // CONTA OS DIAS DO MES INFORMADO DO ANO INICIAL
     if (($intAnoIni % 4 == 0) && ($intAnoIni % 100 != 0 || $intAnoIni % 400 == 0)) {
       // ANO BISSEXTO
-      swBissextoMENOSdiaInicial($intMesIni, $intDiferenca, $intDiaIni);
+      $intDiferenca = swBissextoMENOSdiaInicial($intMesIni, $intDiferenca, $intDiaIni);
     } else {
       // ANO NÃO BISSEXTO
-      swNoBissextoMENOSdiaInicial($intMesIni, $intDiferenca, $intDiaIni);
+      $intDiferenca = swNoBissextoMENOSdiaInicial($intMesIni, $intDiferenca, $intDiaIni);
     }
 
     // COMO OS DIAS DO MES INFORMADO JA FORAM CONTADOS, AUMENTA 1 PARA CONTAR OS PROXIMOS MESES DESSE ANO
@@ -51,12 +51,12 @@ if (isset($_POST['btnAcao'])) {
     if (($intAnoIni % 4 == 0) && ($intAnoIni % 100 != 0 || $intAnoIni % 400 == 0)) {
       // ANO BISSEXTO
       for ($i = $intMesIni; $i <= 12; $i++) {
-        swBissexto($i, $intDiferenca);
+        $intDiferenca = swBissexto($i, $intDiferenca);
       }
     } else {
       // ANO NÃO BISSEXTO
       for ($i = $intMesIni; $i <= 12; $i++) {
-        swNoBissexto($i, $intDiferenca);
+        $intDiferenca = swNoBissexto($i, $intDiferenca);
       }
     }
 
@@ -64,12 +64,13 @@ if (isset($_POST['btnAcao'])) {
     if (($intAnoFin % 4 == 0) && ($intAnoFin % 100 != 0 || $intAnoFin % 400 == 0)) {
       // ANO BISSEXTO
       for ($i = 1; $i <= $intMesFin; $i++) {
-        swBissexto($i, $intDiferenca);
+        $intDiferenca = swBissexto($i, $intDiferenca);
+        
       }
     } else {
       // ANO NÃO BISSEXTO
       for ($i = 1; $i <= $intMesFin; $i++) {
-        swNoBissexto($i, $intDiferenca);
+        $intDiferenca = swNoBissexto($i, $intDiferenca);
       }
     }
 
@@ -82,12 +83,12 @@ if (isset($_POST['btnAcao'])) {
       if (($intAnoIni % 4 == 0) && ($intAnoIni % 100 != 0 || $intAnoIni % 400 == 0)) {
         // ANO BISSEXTO
         for ($i = 1; $i <= 12; $i++) {
-          swBissexto($i, $intDiferenca);
+          $intDiferenca = swBissexto($i, $intDiferenca);
         }
       } else {
         // ANO NÃO BISSEXTO
         for ($i = 1; $i <= 12; $i++) {
-          swNoBissexto($i, $intDiferenca);
+          $intDiferenca = swNoBissexto($i, $intDiferenca);
         }
       }
       // AUMENTA PARA O PRÓXIMO ANO
@@ -112,10 +113,10 @@ if (isset($_POST['btnAcao'])) {
     // CONTA O MES INICIAL
     if (($intAnoIni % 4 == 0) && ($intAnoIni % 100 != 0 || $intAnoIni % 400 == 0)) {
       // ANO BISSEXTO
-      swBissextoMENOSdiaInicial($intMesIni, $intDiferenca, $intDiaIni);
+      $intDiferenca = swBissextoMENOSdiaInicial($intMesIni, $intDiferenca, $intDiaIni);
     } else {
       // ANO NÃO BISSEXTO
-      swNoBissextoMENOSdiaInicial($intMesIni, $intDiferenca, $intDiaIni);
+      $intDiferenca = swNoBissextoMENOSdiaInicial($intMesIni, $intDiferenca, $intDiaIni);
     }
 
     // AUMENTA 1 MES POIS O PRIMEIRO MES INICIAL JA FOI CONTADO
@@ -125,12 +126,12 @@ if (isset($_POST['btnAcao'])) {
     if (($intAnoIni % 4 == 0) && ($intAnoIni % 100 != 0 || $intAnoIni % 400 == 0)) {
       // ANO BISSEXTO
       for ($i = $intMesIni; $i <= $intMesFin; $i++) {
-        swBissexto($i, $intDiferenca);
+        $intDiferenca = swBissexto($i, $intDiferenca);
       }
     } else {
       // ANO NÃO BISSEXTO
       for ($i = $intMesIni; $i <= $intMesFin; $i++) {
-        swNoBissexto($i, $intDiferenca);
+        $intDiferenca = swNoBissexto($i, $intDiferenca);
       }
     }
 

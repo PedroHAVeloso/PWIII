@@ -63,6 +63,7 @@ function swNoBissexto($i, $intDiferenca)
       $intDiferenca += 31;
       break;
   }
+  return $intDiferenca;
 }
 
 function swBissexto($i, $intDiferenca)
@@ -128,6 +129,7 @@ function swBissexto($i, $intDiferenca)
       $intDiferenca += 31;
       break;
   }
+  return $intDiferenca;
 }
 
 function swNoBissextoMENOSdiaInicial($intMesIni, $intDiferenca, $intDiaIni)
@@ -193,6 +195,7 @@ function swNoBissextoMENOSdiaInicial($intMesIni, $intDiferenca, $intDiaIni)
       $intDiferenca += 31 - $intDiaIni;
       break;
   }
+  return $intDiferenca;
 }
 
 function swBissextoMENOSdiaInicial($intMesIni, $intDiferenca, $intDiaIni)
@@ -258,4 +261,5 @@ function swBissextoMENOSdiaInicial($intMesIni, $intDiferenca, $intDiaIni)
       $intDiferenca += 31 - $intDiaIni;
       break;
   }
+  return $intDiferenca;
 }
