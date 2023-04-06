@@ -41,12 +41,17 @@
       <section class="container-login">
         <form action="#" method="post">
           <label for="inpUsuario">Usuário:</label>
+          <br />
           <input type="text" name="inpUsuario" id="inpUsuario">
-
+          <br />
           <label for="inpSenha">Senha:</label>
+          <br />
           <input type="password" name="inpSenha" id="inpSenha">
+          <br />
 
-          <input type="submit" name="inpEntrar" value="Entrar">
+          <div class="container-submit">
+            <input type="submit" name="inpEntrar" id="inpEntrar" value="Entrar">
+          </div>
         </form>
       </section>
 
