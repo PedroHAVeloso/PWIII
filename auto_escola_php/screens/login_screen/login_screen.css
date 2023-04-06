@@ -138,4 +138,19 @@ main {
   .container-aviso-picture {
     width: 180px;
   }
+
+  .container-login {
+    width: 284px;
+  }
+
+  #inpUsuario,
+  #inpSenha {
+    width: 200px;
+  }
+}
+
+@media (max-height: 750px) {
+  .navbar {
+    display: none;
+  }
 }

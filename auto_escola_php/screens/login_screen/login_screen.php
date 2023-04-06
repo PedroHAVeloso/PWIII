@@ -39,14 +39,14 @@
       </header>
 
       <section class="container-login">
-        <form action="#" method="post">
+        <form action="" method="post">
           <label for="inpUsuario">Usuário:</label>
           <br />
-          <input type="text" name="inpUsuario" id="inpUsuario">
+          <input type="text" name="inpUsuario" id="inpUsuario" required>
           <br />
           <label for="inpSenha">Senha:</label>
           <br />
-          <input type="password" name="inpSenha" id="inpSenha">
+          <input type="password" name="inpSenha" id="inpSenha" required>
           <br />
 
           <div class="container-submit">
@@ -61,3 +61,9 @@
 </body>
 
 </html>
+
+<?php
+
+if (isset($_POST['inpEntrar']) && isset($_POST['inpUsuario']) && $_POST['inpSenha']) {
+  header("location: /PWIII/auto_escola_php/screens/home_screen/home_screen.php");
+}
