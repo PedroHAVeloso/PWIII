@@ -1,0 +1,62 @@
+/* Cores:
+#DD5151 VERMELHO
+#1B1B1B PRETO
+#FFFFFF BRANCO
+*/
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  display: grid;
+  place-items: center;
+  background-color: #FFFFFF;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row-reverse;
+
+  margin: 15px;
+}
+
+.container-aviso{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 400px;
+  height: 100px;
+
+  border-radius: 1000px;
+
+  background-color: #DD5151;
+}
+
+.container-aviso-picture{
+  display: flex;
+  align-items: center;
+
+  width: 300px;
+}
+
+.container-aviso-picture h1{
+  margin-left: 20px;
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+.container-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 380px;
+  height: 400px;
+
+  border-radius: 50px;
+  border: #DD5151 10px solid;
+}
