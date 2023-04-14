@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="/PWIII/auto_escola_php/shared/images/logos/favicon.ico" type="image/x-icon">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="login_screen.css">
+  <link rel="stylesheet" href="home_screen.css">
 
   <!-- Autor e descrição -->
   <meta name="author" content="Pedro Veloso">
@@ -22,15 +22,31 @@
 
 <body>
 
-  <header>
-    <nav class="navbar">
-      <img src="/PWIII/auto_escola_php/shared/images/logos/logotipo.svg" alt="Logotipo Olavo Bilac Auto Escola">
-    </nav>
-  </header>
-
   <main>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <button onclick="location.href = `/PWIII/auto_escola_php/screens/alunos_screen/alunos_screen.php`">Alunos</button>
+        <br />
+        <button>Instrutores</button>
+        <br />
+        <button>CFC</button>
+        <br />
+        <button>Aulas</button>
+        <br />
+        <button>Habilitação</button>
+      </div>
+    </nav>
 
+    <aside class="aside">
+      <picture class="aside-picture">
+        <img src="/PWIII/auto_escola_php/shared/images/logos/simbolo.svg" alt="Símbolo Olabo Bilac">
+      </picture>
+    </aside>
   </main>
+
+  <footer>
+    <button onclick="location.href = `/PWIII/auto_escola_php/screens/login_screen/login_screen.php`">Sair</button>
+  </footer>
 
 </body>
 

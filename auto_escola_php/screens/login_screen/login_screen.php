@@ -39,7 +39,7 @@
       </header>
 
       <section class="container-login">
-        <form action="" method="post">
+        <form action="#" method="post">
           <label for="inpUsuario">Usuário:</label>
           <br />
           <input type="text" name="inpUsuario" id="inpUsuario" required>
