@@ -21,9 +21,8 @@ main {
 .navbar {
   display: grid;
   place-items: center;
-  margin-left: 1vw;
 
-  width: 20vw;
+  width: 21vw;
   height: 100vh;
 
   background-color: #1B1B1B;
@@ -98,7 +97,7 @@ footer button:hover {
   }
 
   .navbar {
-    width: 30vw;
+    width: 31vw;
   }
 }
 
@@ -112,7 +111,7 @@ footer button:hover {
   }
 
   .navbar {
-    width: 40vw;
+    width: 41vw;
   }
 }
 
@@ -122,7 +121,7 @@ footer button:hover {
   }
 
   .navbar {
-    width: 90vw;
+    width: 91vw;
   }
 
   main {

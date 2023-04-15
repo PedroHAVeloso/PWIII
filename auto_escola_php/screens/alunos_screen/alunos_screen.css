@@ -90,20 +90,29 @@
 /* MAIN */
 
 main {
-  margin: 10px;
+  background-color: #1B1B1B;
+  height: calc(100vh - 80px);
+  width: 100vw;
 }
 
 article {
   display: flex;
+  flex-wrap: wrap;
+
+  padding-top: 40px;
+  padding-right: 10px;
 }
 
 .section-adicionar {
   height: 200px;
   width: 270px;
 
+  margin-left: 15px;
+  margin-top: 15px;
+
   background-color: transparent;
 
-  border: 6px solid #1B1B1B;
+  border: 6px solid #FFFFFF;
   border-radius: 30px;
 
   display: grid;
@@ -115,16 +124,17 @@ article {
   place-items: center;
 
   margin-left: 15px;
+  margin-top: 15px;
 
   height: 200px;
   width: 270px;
 
-  background-color: #1B1B1B;
+  background-color: #FFFFFF;
 
-  border: 6px solid #1B1B1B;
+  border: 6px solid #FFFFFF;
   border-radius: 30px;
 
-  color: #FFFFFF;
+  color: #1B1B1B;
 }
 
 .section-aluno div {
@@ -162,12 +172,12 @@ article {
   height: 50px;
   width: 120px;
 
-  background-color: #FFFFFF;
+  background-color: #1B1B1B;
 
-  border: 6px solid #FFFFFF;
+  border: 6px solid #1B1B1B;
   border-radius: 100px;
 
   font-weight: bold;
-  color: #1B1B1B;
+  color: #FFFFFF;
   font-size: 20px;
 }
