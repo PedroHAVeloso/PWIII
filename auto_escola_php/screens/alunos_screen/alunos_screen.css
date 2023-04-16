@@ -90,7 +90,7 @@
 /* MAIN */
 
 main {
-  background-color: #1B1B1B;
+  background-color: #FFFFFF;
   height: calc(100vh - 80px);
   width: 100vw;
 }
@@ -112,7 +112,7 @@ article {
 
   background-color: transparent;
 
-  border: 6px solid #FFFFFF;
+  border: 6px solid #1B1B1B;
   border-radius: 30px;
 
   display: grid;
@@ -129,12 +129,12 @@ article {
   height: 200px;
   width: 270px;
 
-  background-color: #FFFFFF;
+  background-color: #1B1B1B;
 
-  border: 6px solid #FFFFFF;
+  border: 6px solid #1B1B1B;
   border-radius: 30px;
 
-  color: #1B1B1B;
+  color: #FFFFFF;
 }
 
 .section-aluno div {
@@ -172,12 +172,35 @@ article {
   height: 50px;
   width: 120px;
 
-  background-color: #1B1B1B;
+  background-color: #FFFFFF;
 
-  border: 6px solid #1B1B1B;
+  border: 6px solid #FFFFFF;
   border-radius: 100px;
 
   font-weight: bold;
-  color: #FFFFFF;
+  color: #1B1B1B;
   font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .search {
+    position: absolute;
+    right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-div {
+    width: 200px;
+  }
+
+  .search-div img {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .search {
+    display: none;
+  }
 }
