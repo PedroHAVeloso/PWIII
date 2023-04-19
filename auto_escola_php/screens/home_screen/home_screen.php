@@ -27,13 +27,13 @@
       <div class="navbar-container">
         <button onclick="location.href = `/PWIII/auto_escola_php/screens/alunos_screen/alunos_screen.php`">Alunos</button>
         <br />
-        <button>Instrutores</button>
+        <button onclick="location.href = `/PWIII/auto_escola_php/screens/instrutores_screen/instrutores_screen.php`">Instrutores</button>
         <br />
-        <button>CFC</button>
+        <button onclick="location.href = `/PWIII/auto_escola_php/screens/cfc_screen/cfc_screen.php`">CFC</button>
         <br />
         <button>Aulas</button>
         <br />
-        <button>Habilitação</button>
+        <button onclick="location.href = `/PWIII/auto_escola_php/screens/habilitacao_screen/habilitacao_screen.php`">Habilitação</button>
       </div>
     </nav>
 

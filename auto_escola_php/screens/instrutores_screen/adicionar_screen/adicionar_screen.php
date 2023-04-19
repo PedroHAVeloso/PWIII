@@ -10,21 +10,21 @@
   <link rel="shortcut icon" href="/PWIII/auto_escola_php/shared/images/logos/favicon.ico" type="image/x-icon">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="editar_screen.css">
+  <link rel="stylesheet" href="adicionar_screen.css">
 
   <!-- Autor e descrição -->
   <meta name="author" content="Pedro Veloso">
   <meta name="description" content="Olavo Bilac Auto Escola">
 
   <!-- Título -->
-  <title>Bilac | Alunos</title>
+  <title>Bilac | Instrutores</title>
 </head>
 
 <body>
 
   <header>
     <nav class="navbar">
-      <button id="btnVoltar" onclick="location.href = `/PWIII/auto_escola_php/screens/home_screen/home_screen.php`">
+      <button id="btnVoltar" onclick="location.href = `/PWIII/auto_escola_php/screens/instrutores_screen/instrutores_screen.php`">
         <img src="/PWIII/auto_escola_php/shared/images/icons/voltar.svg" alt="Icone Voltar">
       </button>
 
@@ -41,27 +41,20 @@
 
   <main>
     <article>
-      <section class="section-adicionar">
-        <img src="/PWIII/auto_escola_php/shared/images/icons/add.svg" alt="Icone Adicionar">
-      </section>
+      <form action="#" method="post">
+        <label for="inpUsuario">Nome:</label>
+        <br />
+        <input type="text" name="inpUsuario" id="inpUsuario" required>
+        <br />
+        <label for="inpCPF">CPF:</label>
+        <br />
+        <input type="text" name="inpCPF" id="inpCPF" required>
+        <br />
 
-      <section class="section-aluno">
-        <div>
-          <h1>ID: 1AB2C3</h1>
-          <h2>Nome: João da Silva Santos</h2>
-          <h3>Estado: <strong data-estado="HABILITADO">HABILITADO</strong></h3>
-          <button>Detalhes</button>
+        <div class="container-submit">
+          <input onclick="location.href = `/PWIII/auto_escola_php/screens/instrutores_screen/instrutores_screen.php`" type="submit" name="inpAdicionar" id="inpAdicionar" value="Adicionar">
         </div>
-      </section>
-
-      <section class="section-aluno">
-        <div>
-          <h1>ID: C3B2A1</h1>
-          <h2>Nome: José Santos da Silva</h2>
-          <h3>Estado: <strong data-estado="DESABILITADO">DESABILITADO</strong></h3>
-          <button>Detalhes</button>
-        </div>
-      </section>
+      </form>
     </article>
   </main>
 
