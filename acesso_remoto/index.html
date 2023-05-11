@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Usuários</title>
+</head>
+<body>
+  
+  <main>
+    <form method="post" action="/acesso_remoto/user.php">
+      <label for="name-input">
+        Nome
+        <input 
+          type="text" 
+          class="user-input" 
+          name="name_inp" 
+          id="name-input" 
+          required 
+          placeholder="Campo obrigatório"
+        >
+      </label>
+      <label for="email-input">
+        E-mail
+        <input 
+          type="text" 
+          class="user-input"
+          name="email_inp" 
+          id="email-input" 
+          required 
+          placeholder="Campo obrigatório"
+        >
+      </label>
+      <label for="password-input">
+        Senha
+        <input 
+          type="password" 
+          class="user-input"
+          name="password_inp"
+          id="password-input" 
+          required 
+          placeholder="Campo obrigatório"
+        >
+      </label>
+      
+      <input type="submit" value="Cadastrar">
+    </form>
+  </main>
+
+</body>
+</html>
+
+<style>
+  .user-input::placeholder{
+    color: lightcoral;
+  }
+</style>
